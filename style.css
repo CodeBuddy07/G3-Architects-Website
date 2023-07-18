@@ -109,12 +109,43 @@ header{
     
 }
 
+/* featured styles */
+
+.featured{
+    display: flex;
+    padding: 0px 240px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.ftext{
+    max-width: 580px;
+}
+
+.ftitle{
+    max-width: 470px;
+}
+
+.ftitle > h1{
+    border-left: 5px solid orange;
+    padding-left:20px;
+}
+
+.fcard{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width:576px){
 
+    *{
+        font-size: 1 rem;
+    }
+
     .header> img{
         width: 100%;
-        visibility: hidden;
     }
 
     nav{
@@ -123,7 +154,7 @@ header{
     }
 
     .htext{
-        padding: 50px;
+        padding: 10px;
     }
 
     .grid{
@@ -141,6 +172,16 @@ header{
 
     .tText{
         padding: 30px;
+    }
+
+    .featured{
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .featured > img {
+        width: 100%;
     }
 
 }
